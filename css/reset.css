@@ -1,0 +1,79 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Meus inputs */
+
+
+body {
+    /* Variáveis de cores*/
+    --color-dark-blue: #051D3B;
+    --color-blue-300: #5081FB;
+    --color-blue-200: #7BA4FC;
+    --color-blue-100: #96B9FD;
+    --color-white: #ffffff;
+    --color-dark-gray: #141414;
+    --color-mac-green: #27C93F;
+    --color-mac-yellow: #FFBD2E;
+    --color-mac-red: #FF5F56;
+    --color-bgInput: #ffffff29;
+    --color-input: #ffffffa3;
+    
+    /* Texto */
+    font-family: 'Inter', sans-serif;
+    --title-size: 21px;
+    --title-line-height: 32px;
+    --body-size: 16px;
+    --body-line-height: 24px;
+    --slidebar-size: 12px;
+    --slidebar-line-height: 18px;
+    --slidebar-letter-spacing: 0.4;
+    --code-font-family: 'Roboto Mono', monospace;
+    --code-size: 14px;
+    --code-line-height: 18px;
+}

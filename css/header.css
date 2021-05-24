@@ -1,0 +1,21 @@
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    box-sizing: border-box;
+    background-color: var(--color-dark-blue);
+}
+
+.profileContainer {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-first);
+    color: var(--color-white);
+}
+
+.profileContainer > p {
+    padding: 8px;
+}
+
