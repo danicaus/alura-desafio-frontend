@@ -25,11 +25,11 @@
 }
 
 /* Menu navegação hover */
-.menuNavegacao > nav > a:hover img {
+.menuNavegacao > nav > a[ariaPressed="false"]:hover img {
     opacity: 0.80;
     background-color: var(--color-bgMenuHover);
 }
-.menuNavegacao > nav > a:hover figcaption {
+.menuNavegacao > nav > a[ariaPressed="false"]:hover figcaption {
     color: var(--color-menuHover);
 }
 
@@ -37,11 +37,5 @@
 .menuNavegacao > nav > a[ariaPressed="true"]:hover {
     cursor: auto;
 }
-.menuNavegacao > nav > a[ariaPressed="true"]:hover img{
-    opacity: 1;
-    background-color: var(--color-blue-300) ;
-}
-.menuNavegacao > nav > a[ariaPressed="true"]:hover figcaption {
-    color: var(--color-white);
-}
+
 
