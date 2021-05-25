@@ -1,13 +1,13 @@
 .code-editorColumn {
     width: 100%;
-    grid-area: main;
+    grid-area: editorColumn;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .code-container {
-    background-color: var(--color-blue-400);
+    background-color: var(--color-codeBgBlue);
     padding: 32px;
     border-radius: 8px;
     width: 100%;

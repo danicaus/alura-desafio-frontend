@@ -8,7 +8,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="css/header.css">
-        <link rel="stylesheet" href="css/header-searchBar.css">
+        <link rel="stylesheet" href="css/main-input.css">
         <link rel="stylesheet" href="css/section-main.css">
         <link rel="stylesheet" href="css/text-body.css">
         <link rel="stylesheet" href="css/text-sidebarTitle.css">
@@ -16,13 +16,15 @@
         <link rel="stylesheet" href="css/menu-img.css">
         <link rel="stylesheet" href="css/code-editorColumn.css">
         <link rel="stylesheet" href="css/code-textarea.css">
-        <link rel="stylesheet" href="css/button-outlined.css">
+        <link rel="stylesheet" href="css/code-btnHighlight.css">
+        <link rel="stylesheet" href="css/code-inputSidebar.css">
+        <link rel="stylesheet" href="css/section-codeEditor.css">
 
     </head>
     <body>
         <header class="header">
             <img src="assets/img/logo-aluradev.png" alt="Logo AluraDev">
-            <input type="text" class="header-searchBar" placeholder="Busque por algo">
+            <input type="text" class="main-input header-searchBar" placeholder="Busque por algo">
             <div class="profileContainer">
                 <img src="assets/img/foto-perfil.png" alt="Foto perfil">
                 <p class="header-nomePerfil">Harry</p>
@@ -46,7 +48,7 @@
                     </a>
                 </nav>
             </section>
-            <section class="section-codeEditor">
+            <form class="section-codeEditor" id="form-codeEditor">
                 <div class="code-editorColumn">
                     <div class="code-container">
                         <div class="code-macBtnContainer">
@@ -56,12 +58,27 @@
                         </div>
                         <textarea class="code-textarea"></textarea>
                     </div>
-                    <button class="button-outlined">Visualizar com o highlight</button>  
+                    <button class="code-btnHighlight">Visualizar com o highlight</button>  
                 </div>
-                <div class="menu-sidebar">
-
+                <div class="code-inputSidebar">
+                    <div class="code-description">
+                        <h2 class="text-sidebarTitle">Seu Projeto</h2>
+                        <input type="text" class="main-input code-name" placeholder="Nome do seu projeto">
+                        <textarea class="main-input code-description" placeholder="Descrição do seu projeto"></textarea>
+                    </div>
+                    <div class="code-personalization">
+                        <h2 class="text-sidebarTitle">Personalização</h2>
+                        
+                        <select name="linguagem" class="main-input code-selectLang">
+                            <option class="main-input code-optLang" value="JavaScript" label="JavaScript" selected>JavaScript</option>
+                            <option class="main-input code-optLang" value="HTML" label="HTML">HTML</option>
+                            <option class="main-input code-optLang" value="CSS" label="CSS">CSS</option>
+                        </select>
+                        <input type="color" value="#6BD1FF" class="main-input code-selectColor">
+                        <button class="code-btnHighlight -btnSubmit" type="submit" form="form-codeEditor" class="main-input">Salvar Projeto</button>
+                    </div>
                 </div>
-            </section>
+            </form>
         </main>
     </body>
 </html>

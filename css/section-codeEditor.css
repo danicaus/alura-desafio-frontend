@@ -1,0 +1,4 @@
+.section-codeEditor {
+    grid-area: main;
+    display: flex;
+}

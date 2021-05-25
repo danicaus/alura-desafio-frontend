@@ -1,0 +1,15 @@
+.code-inputSidebar {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+}
+
+.code-inputSidebar>.code-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.code-inputSidebar>.code-personalization {
+    display: flex;
+    flex-direction: column;
+}

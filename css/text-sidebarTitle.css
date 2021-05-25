@@ -4,4 +4,5 @@
     letter-spacing: var(--sidebar-letter-spacing);
     text-transform: uppercase;
     color: var(--color-white);
+    margin: 0 0 16px 0;
 }

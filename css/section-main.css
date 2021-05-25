@@ -1,9 +1,9 @@
 .section-main {
     display: grid;
-    grid-template-columns: 25% 50% 25%;
+    grid-template-columns: 15% auto 25%;
     grid-template-rows: auto;
     grid-template-areas: 
-        "sidebar-left main sidebar-right";
+        "sidebar-left main main";
     background-color: var(--color-dark-blue);
     padding: 40px 2%;
 }
