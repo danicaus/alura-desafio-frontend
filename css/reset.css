@@ -59,15 +59,22 @@ body {
     --color-blue-100: #96B9FD;
     --color-white: #ffffff;
     
+    /* Cores com transparências */
+    --color-bgMenuNormal: #5081fb29;
+    --color-menuNormal: #ffffff8f;
+    --color-bgMenuHover: #5080fba3;
+    --color-menuHover: #ffffffb8;
+    --color-bgBtnOtlNormal: #5081FB14;
+    --color-bgBtnOtlHover: #5081FB29;
+    --color-bgBtnOtlPressed: #5081FB29;
+    --color-bgBtnOtlFocus: #5081FB3D;
+
+
     /* Cores do input */
     --color-bgInput: #ffffff29;
     --color-input: #ffffffa3;
     
-    /* Cores do Menu */
-    --color-bgMenuHover: #5080fba3;
-    --color-menuHover: #ffffffb8;
-    --color-bgMenuNormal: #5081fb29;
-    --color-menuNormal: #ffffff8f;
+
     
     /* Cores da seção de edição de código */
     --color-dark-gray: #141414;
