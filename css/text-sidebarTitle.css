@@ -1,0 +1,7 @@
+.text-sidebarTitle {
+    font-size: var(--sidebar-size);
+    line-height: var(--sidebar-line-height);
+    letter-spacing: var(--sidebar-letter-spacing);
+    text-transform: uppercase;
+    color: var(--color-white);
+}

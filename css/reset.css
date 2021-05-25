@@ -51,7 +51,7 @@ table {
 
 
 body {
-    /* Variáveis de cores*/
+    /* Cores*/
     --color-dark-blue: #051D3B;
     --color-blue-300: #5081FB;
     --color-blue-200: #7BA4FC;
@@ -64,15 +64,21 @@ body {
     --color-bgInput: #ffffff29;
     --color-input: #ffffffa3;
     
+    /* Opções Menu */
+    --color-bgMenuHover: #5080fba3;
+    --color-menuHover: #ffffffb8;
+    --color-bgMenuNormal: #5081fb29;
+    --color-menuNormal: #ffffff8f;
+    
     /* Texto */
     font-family: 'Inter', sans-serif;
     --title-size: 21px;
     --title-line-height: 32px;
     --body-size: 16px;
     --body-line-height: 24px;
-    --slidebar-size: 12px;
-    --slidebar-line-height: 18px;
-    --slidebar-letter-spacing: 0.4;
+    --sidebar-size: 12px;
+    --sidebar-line-height: 18px;
+    --sidebar-letter-spacing: 0.4em;
     --code-font-family: 'Roboto Mono', monospace;
     --code-size: 14px;
     --code-line-height: 18px;

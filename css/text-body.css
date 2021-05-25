@@ -1,0 +1,5 @@
+.text-body {
+    font-size: var(--body-size);
+    line-height: var(--body-line-height);
+    color: var(--color-white);
+}

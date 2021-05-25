@@ -1,0 +1,47 @@
+.menuNavegacao {
+    padding: 32px;
+}
+
+.menuNavegacao > nav > a {
+    display: flex;
+    flex-direction: column;
+    margin: 16px 16px 0 0;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.menuNavegacao > nav > a > figure {
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Menu navegação não pressionado */
+.menuNavegacao > nav > a[ariaPressed="false"] img{
+    opacity: 0.48;
+    background-color: var(--color-bgMenuNormal);
+}
+.menuNavegacao > nav > a[ariaPressed="false"] figcaption {
+    color: var(--color-menuNormal);
+}
+
+/* Menu navegação hover */
+.menuNavegacao > nav > a:hover img {
+    opacity: 0.80;
+    background-color: var(--color-bgMenuHover);
+}
+.menuNavegacao > nav > a:hover figcaption {
+    color: var(--color-menuHover);
+}
+
+/* Menu navegação pressionado */
+.menuNavegacao > nav > a[ariaPressed="true"]:hover {
+    cursor: auto;
+}
+.menuNavegacao > nav > a[ariaPressed="true"]:hover img{
+    opacity: 1;
+    background-color: var(--color-blue-300) ;
+}
+.menuNavegacao > nav > a[ariaPressed="true"]:hover figcaption {
+    color: var(--color-white);
+}
+
