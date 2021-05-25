@@ -1,4 +1,4 @@
-.section-codeEditor {
+.code-editorColumn {
     width: 100%;
     grid-area: main;
     display: flex;

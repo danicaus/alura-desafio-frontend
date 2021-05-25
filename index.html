@@ -14,8 +14,8 @@
         <link rel="stylesheet" href="css/text-sidebarTitle.css">
         <link rel="stylesheet" href="css/menuNavegacao.css">
         <link rel="stylesheet" href="css/menu-img.css">
-        <link rel="stylesheet" href="css/section-codeEditor.css">
-        <link rel="stylesheet" href="css/code-editor.css">
+        <link rel="stylesheet" href="css/code-editorColumn.css">
+        <link rel="stylesheet" href="css/code-textarea.css">
         <link rel="stylesheet" href="css/button-outlined.css">
 
     </head>
@@ -47,15 +47,20 @@
                 </nav>
             </section>
             <section class="section-codeEditor">
-                <div class="code-container">
-                    <div class="code-macBtnContainer">
-                        <div class="code-macBtn bgRed"></div>
-                        <div class="code-macBtn bgYellow"></div>
-                        <div class="code-macBtn bgGreen"></div>
+                <div class="code-editorColumn">
+                    <div class="code-container">
+                        <div class="code-macBtnContainer">
+                            <div class="code-macBtn bgRed"></div>
+                            <div class="code-macBtn bgYellow"></div>
+                            <div class="code-macBtn bgGreen"></div>
+                        </div>
+                        <textarea class="code-textarea"></textarea>
                     </div>
-                    <textarea class="code-editor" wrap="off"></textarea>
+                    <button class="button-outlined">Visualizar com o highlight</button>  
                 </div>
-                <button class="button-outlined">Visualizar com o highlight</button>  
+                <div class="menu-sidebar">
+
+                </div>
             </section>
         </main>
     </body>
