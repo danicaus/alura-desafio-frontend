@@ -1,5 +1,5 @@
 .header-searchBar {
-    width: 50%;
+    box-sizing: border-box;
     padding: 16px 14px;
     color: var(--color-input);
     background-color: var(--color-bgInput);

@@ -1,6 +1,10 @@
 .header {
-    display: flex;
+    display: grid;
     width: 100%;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "logo searchBar profileContainer";
     justify-content: space-between;
     align-items: center;
     padding: 2% 2% 0 2%;
@@ -9,13 +13,18 @@
 }
 
 .profileContainer {
+    grid-area: profileContainer;
     display: flex;
     align-items: center;
     background-color: var(--color-first);
     color: var(--color-white);
+    justify-content: end;
+}
+
+.profileContainer > img {
+    grid-area: logo;
 }
 
 .profileContainer > p {
     padding: 8px;
 }
-
