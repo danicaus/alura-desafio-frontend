@@ -1,0 +1,9 @@
+.section-main {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "sidebar-left main sidebar-right";
+    background-color: var(--color-dark-blue);
+    padding-top: 40px;
+}

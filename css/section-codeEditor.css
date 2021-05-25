@@ -1,0 +1,37 @@
+.section-codeEditor {
+    grid-area: main;
+}
+
+.code-container {
+    background-color: var(--color-blue-400);
+    padding: 32px;
+    border-radius: 8px;
+    width: 100%;
+    position: relative;
+}
+
+.code-macBtnContainer {
+    display: flex;
+    position: absolute;
+    top: 48px;
+    left: 48px;
+}
+
+.code-macBtn {
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    margin-right: 8px; 
+}
+
+.code-macBtn.bgRed {
+background-color: var(--color-mac-red);
+}
+
+.code-macBtn.bgYellow {
+    background-color: var(--color-mac-yellow);
+}
+
+.code-macBtn.bgGreen {
+    background-color: var(--color-mac-green);
+}

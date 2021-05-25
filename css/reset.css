@@ -51,25 +51,32 @@ table {
 
 
 body {
-    /* Cores*/
+    /* Cores principais*/
     --color-dark-blue: #051D3B;
+    --color-blue-400: #6BD1FF;
     --color-blue-300: #5081FB;
     --color-blue-200: #7BA4FC;
     --color-blue-100: #96B9FD;
     --color-white: #ffffff;
-    --color-dark-gray: #141414;
-    --color-mac-green: #27C93F;
-    --color-mac-yellow: #FFBD2E;
-    --color-mac-red: #FF5F56;
+    
+    /* Cores do input */
     --color-bgInput: #ffffff29;
     --color-input: #ffffffa3;
     
-    /* Opções Menu */
+    /* Cores do Menu */
     --color-bgMenuHover: #5080fba3;
     --color-menuHover: #ffffffb8;
     --color-bgMenuNormal: #5081fb29;
     --color-menuNormal: #ffffff8f;
     
+    /* Cores da seção de edição de código */
+    --color-dark-gray: #141414;
+    --color-editor-shadow: #0000003d;
+    --color-mac-green: #27C93F;
+    --color-mac-yellow: #FFBD2E;
+    --color-mac-red: #FF5F56;
+
+
     /* Texto */
     font-family: 'Inter', sans-serif;
     --title-size: 21px;

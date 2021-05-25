@@ -9,11 +9,15 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/header-searchBar.css">
-        <link rel="stylesheet" href="css/section-editorCodigo.css">
+        <link rel="stylesheet" href="css/section-main.css">
         <link rel="stylesheet" href="css/text-body.css">
         <link rel="stylesheet" href="css/text-sidebarTitle.css">
         <link rel="stylesheet" href="css/menuNavegacao.css">
         <link rel="stylesheet" href="css/menu-img.css">
+        <link rel="stylesheet" href="css/section-codeEditor.css">
+        <link rel="stylesheet" href="css/code-editor.css">
+        <link rel="stylesheet" href="css/button-outlined.css">
+
     </head>
     <body>
         <header class="header">
@@ -24,7 +28,7 @@
                 <p class="header-nomePerfil">Harry</p>
             </div>
         </header>
-        <main class="section-editorCodigo">
+        <main class="section-main">
             <section class="menuNavegacao">
                 <h2 class="text-sidebarTitle">Menu</h2>
                 <nav>
@@ -41,6 +45,18 @@
                         </figure>
                     </a>
                 </nav>
+            </section>
+            <section class="section-codeEditor">
+                <div class="code-container">
+                    <div class="code-macBtnContainer">
+                        <div class="code-macBtn bgRed"></div>
+                        <div class="code-macBtn bgYellow"></div>
+                        <div class="code-macBtn bgGreen"></div>
+                    </div>
+                    <textarea class="code-editor"></textarea>
+                </div>
+                <button class="button-outlined">Visualizar com o highlight</button>
+                
             </section>
         </main>
     </body>
