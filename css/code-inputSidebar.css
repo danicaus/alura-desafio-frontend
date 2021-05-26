@@ -1,8 +1,8 @@
 .code-inputSidebar {
     display: block;
     justify-content: end;
-    width: 25%;
-    min-width: 250px;
+    width: 30%;
+    min-width: 270px;
     margin-left: 40px;
     flex: 1;
 }

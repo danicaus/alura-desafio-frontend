@@ -1,7 +1,7 @@
 .menuNavegacao {
     display: block;
-    width: 25%;
-    min-width: 250px;
+    width: 30%;
+    min-width: 300px;
     box-sizing: border-box;
     flex: 1;
 }
