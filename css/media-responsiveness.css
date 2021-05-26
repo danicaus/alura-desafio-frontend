@@ -1,0 +1,90 @@
+@media screen
+    and (min-device-width: 1200px) {
+        .header > .header-icon {
+            display: none;
+        }
+    }
+
+@media screen 
+    and (min-device-width: 767px) 
+    and (max-device-width: 1200px) {
+        .menuNavegacao, .profileContainer {
+            display: none;
+        }
+
+        .header > a {
+            width: 145px;
+            min-width: 145px;
+            margin-right: 40px;
+        }
+
+        .header > .header-icon {
+            display: none;
+        }        
+
+        .header > #header-menuIcon {
+            display: flex;
+        }
+
+        .section-codeEditor {
+            display: block;
+        }
+
+        .code-inputSidebar {
+            margin: 40px 0px;
+            width: 100%;
+        }
+
+        .code-inputSidebar>.code-personalization {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        .code-personalization > .text-sidebarTitle {
+            width: 100%;
+        }
+    
+        .code-personalization > .main-input.code-selectLang,
+        .code-personalization > .main-input.code-selectColor  {
+            width: calc(50% - 16px);
+        }
+}
+
+@media screen 
+    and (max-device-width: 767px) {
+        .menuNavegacao, .profileContainer {
+            display: none;
+        }
+
+        .header > a {
+            width: 145px;
+            min-width: 145px;
+            margin-right: 40px;
+        }
+
+        .header > .main-input.header-searchBar {
+            display: none;
+        }
+
+        .header > .header-icon {
+            display: none;
+        }
+
+        .header > #header-menuIcon,
+        .header > #header-searchIcon {
+            display: flex;
+            margin-left: 8px;
+        }
+
+
+        .section-codeEditor {
+            display: block;
+        }
+        
+        .code-inputSidebar {
+            margin: 40px 0px;
+            width: 100%;
+        }
+}

@@ -4,7 +4,7 @@
     align-items: center;
     box-sizing: border-box;
     margin-bottom: 40px;
-    padding: 32px 32px;
+    padding: 32px 32px 0 32px;
     width: 100%;
 }
 
@@ -14,6 +14,7 @@
     min-width: 300px;
     box-sizing: border-box;
     flex: 1;
+    justify-self: flex-start;
 }
 
 .profileContainer {
@@ -23,13 +24,9 @@
     width: 30%;
     min-width: 270px;
     margin-left: 40px;
-    background-color: var(--color-first);
+    background-color: var(--color-dark-blue);
     color: var(--color-white);
     flex: 1;
-}
-
-.profileContainer > img {
-    grid-area: logo;
 }
 
 .profileContainer > p {

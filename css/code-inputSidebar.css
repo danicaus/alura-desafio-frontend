@@ -1,6 +1,6 @@
 .code-inputSidebar {
     display: block;
-    justify-content: end;
+    right: 0;
     width: 30%;
     min-width: 270px;
     margin-left: 40px;
@@ -13,6 +13,6 @@
 }
 
 .code-inputSidebar>.code-personalization {
-    display: flex;
-    flex-direction: column;
+    display: block;
+    width: 100%;
 }

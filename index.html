@@ -3,7 +3,8 @@
     
     <head>
         <meta charset="utf-8">
-        <title>Alura Dev</title>
+        <meta name="viewport" content="width=device-width">
+        <title>Desafio FrontEnd - Alura Dev</title>
         <link rel="stylesheet" href="css/reset.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet"> 
@@ -20,11 +21,13 @@
         <link rel="stylesheet" href="css/code-btnHighlight.css">
         <link rel="stylesheet" href="css/code-inputSidebar.css">
         <link rel="stylesheet" href="css/section-codeEditor.css">
+        <link rel="stylesheet" href="css/media-responsiveness.css">
+        <link rel="stylesheet" href="css/header-icon.css">
 
     </head>
     <body>
         <header class="header">
-            <a href="">
+            <a class="logo-alura" href="">
                 <img src="assets/img/logo-aluradev.png" alt="Logo AluraDev">
             </a>
             <input type="text" class="main-input header-searchBar" placeholder="Busque por algo">
@@ -32,6 +35,15 @@
                 <img src="assets/img/foto-perfil.png" alt="Foto perfil">
                 <p class="text-body" id="header-nomePerfil">Harry</p>
             </div>
+            <button class="header-icon" id="header-exitIcon">
+                <img src="assets/img/icone-exit.png" alt="">
+            </button>
+            <button class="header-icon" id="header-searchIcon">
+                <img src="assets/img/icone-search.png" alt="">
+            </button>
+            <button class="header-icon" id="header-menuIcon">
+                <img src="assets/img/icone-menuHamburguer.png" alt="">
+            </button>
         </header>  
         <main class="section-main">
             <section class="menuNavegacao">
@@ -59,7 +71,18 @@
                             <div class="code-macBtn -bgYellow"></div>
                             <div class="code-macBtn -bgGreen"></div>
                         </div>
-                        <textarea class="code-textarea"></textarea>
+                        <textarea class="code-textarea">
+const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+
+const unfold = (f, seed) => {
+  const go = (f, seed, acc) => {
+    const res = f(seed)
+    return res ? go(f, res[1], acc.concat([res[0]])) : acc
+  }
+  return go(f, seed, [])
+                        </textarea>
                     </div>
                     <button class="code-btnHighlight">Visualizar com o highlight</button>  
                 </div>
@@ -71,15 +94,14 @@
                     </div>
                     <div class="code-personalization">
                         <h2 class="text-sidebarTitle">Personalização</h2>
-                        
                         <select name="linguagem" class="main-input code-selectLang">
                             <option class="main-input code-optLang" value="JavaScript" label="JavaScript" selected>JavaScript</option>
                             <option class="main-input code-optLang" value="HTML" label="HTML">HTML</option>
                             <option class="main-input code-optLang" value="CSS" label="CSS">CSS</option>
                         </select>
                         <input type="color" value="#6BD1FF" class="main-input code-selectColor">
-                        <button class="code-btnHighlight -btnSubmit" type="submit" form="form-codeEditor" class="main-input">Salvar Projeto</button>
                     </div>
+                        <button class="code-btnHighlight -btnSubmit" type="submit" form="form-codeEditor" class="main-input">Salvar Projeto</button>
                 </div>
             </form>
         </main>
