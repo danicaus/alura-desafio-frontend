@@ -1,9 +1,6 @@
 .code-editorColumn {
+    display: block; 
     width: 100%;
-    grid-area: editorColumn;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .code-container {
@@ -20,6 +17,7 @@
     position: absolute;
     top: 48px;
     left: 48px;
+    background-color: var(--color-dark-gray);
 }
 
 .code-macBtn {
@@ -29,14 +27,14 @@
     margin-right: 8px; 
 }
 
-.code-macBtn.bgRed {
+.code-macBtn.-bgRed {
 background-color: var(--color-mac-red);
 }
 
-.code-macBtn.bgYellow {
+.code-macBtn.-bgYellow {
     background-color: var(--color-mac-yellow);
 }
 
-.code-macBtn.bgGreen {
+.code-macBtn.-bgGreen {
     background-color: var(--color-mac-green);
 }

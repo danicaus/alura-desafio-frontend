@@ -1,7 +1,10 @@
 .code-inputSidebar {
-    display: flex;
-    flex-direction: column;
+    display: block;
+    justify-content: end;
+    width: 25%;
+    min-width: 250px;
     margin-left: 40px;
+    flex: 1;
 }
 
 .code-inputSidebar>.code-description {

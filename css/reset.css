@@ -98,3 +98,7 @@ body {
     --code-size: 14px;
     --code-line-height: 18px;
 }
+
+* {
+    background-color: var(--color-dark-blue);
+}

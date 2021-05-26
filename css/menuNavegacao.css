@@ -1,5 +1,9 @@
 .menuNavegacao {
-    grid-area: sidebar-left;
+    display: block;
+    width: 25%;
+    min-width: 250px;
+    box-sizing: border-box;
+    flex: 1;
 }
 
 .menuNavegacao > nav > a {
@@ -8,6 +12,7 @@
     margin: 16px 16px 0 0;
     cursor: pointer;
     text-decoration: none;
+    box-sizing: content-box;
 }
 
 .menuNavegacao > nav > a > figure {

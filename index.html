@@ -8,6 +8,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/header-searchBar.css">
         <link rel="stylesheet" href="css/main-input.css">
         <link rel="stylesheet" href="css/section-main.css">
         <link rel="stylesheet" href="css/text-body.css">
@@ -23,13 +24,15 @@
     </head>
     <body>
         <header class="header">
-            <img src="assets/img/logo-aluradev.png" alt="Logo AluraDev">
+            <a href="">
+                <img src="assets/img/logo-aluradev.png" alt="Logo AluraDev">
+            </a>
             <input type="text" class="main-input header-searchBar" placeholder="Busque por algo">
             <div class="profileContainer">
                 <img src="assets/img/foto-perfil.png" alt="Foto perfil">
-                <p class="header-nomePerfil">Harry</p>
+                <p class="text-body" id="header-nomePerfil">Harry</p>
             </div>
-        </header>
+        </header>  
         <main class="section-main">
             <section class="menuNavegacao">
                 <h2 class="text-sidebarTitle">Menu</h2>
@@ -52,9 +55,9 @@
                 <div class="code-editorColumn">
                     <div class="code-container">
                         <div class="code-macBtnContainer">
-                            <div class="code-macBtn bgRed"></div>
-                            <div class="code-macBtn bgYellow"></div>
-                            <div class="code-macBtn bgGreen"></div>
+                            <div class="code-macBtn -bgRed"></div>
+                            <div class="code-macBtn -bgYellow"></div>
+                            <div class="code-macBtn -bgGreen"></div>
                         </div>
                         <textarea class="code-textarea"></textarea>
                     </div>

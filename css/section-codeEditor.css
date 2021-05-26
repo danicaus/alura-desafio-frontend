@@ -1,4 +1,5 @@
 .section-codeEditor {
-    grid-area: main;
     display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
