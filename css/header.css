@@ -14,21 +14,41 @@
     min-width: 300px;
     box-sizing: border-box;
     flex: 1;
-    justify-self: flex-start;
 }
 
 .profileContainer {
-    display: flex;
-    align-items: center;
-    justify-content: end;
     width: 30%;
     min-width: 270px;
     margin-left: 40px;
-    background-color: var(--color-dark-blue);
     color: var(--color-white);
     flex: 1;
+    display: flex;
+    justify-content: flex-end;
 }
 
-.profileContainer > p {
-    padding: 8px;
+.profilePhoto {
+    background-image: url("../assets/img/foto-perfil.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+}
+
+.profileHover {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border-radius: 8px;
+    width: fit-content;
+}
+
+.profileHover > p {
+    margin: 0 8px;
+    background-color: transparent;
+}
+
+.profileHover:hover {
+    background-color: var(--color-bgBtnHighlightNormal);
 }
