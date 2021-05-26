@@ -1,0 +1,17 @@
+.profileContainer.header-menuHamburguer > div {
+    padding: 12px;
+    border-radius: 16px;
+}
+
+.profileContainer.header-menuHamburguer > div:hover {
+    background-color: var(--color-bgBtnHighlightNormal);
+}
+
+.profileContainer.header-menuHamburguer > div:active {
+    background-color: var(--color-bgBtnHighlightHover);
+}
+
+.profileContainer.header-menuHamburguer > div:focus {
+    background-color: var(--color-bgBtnHighlightFocus);
+}
+
