@@ -47,8 +47,9 @@
         }
     
         .code-personalization > .main-input.code-selectLang,
-        .code-personalization > .main-input.code-selectColor  {
-            width: calc(50% - 16px);
+        .code-personalization > .main-input.code-selectColor,
+        .customSelectWrapper  {
+            width: calc(50% - 16px) !important; 
         }
 }
 
