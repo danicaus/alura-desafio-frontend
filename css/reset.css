@@ -46,6 +46,11 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+
 
 /* Meus inputs */
 
@@ -61,10 +66,10 @@ body {
 
 
     /* Cores com transparências */
-    --color-bgMenuNormal: #5081fb29;
-    --color-menuNormal: #ffffff8f;
-    --color-bgMenuHover: #5080fba3;
-    --color-menuHover: #ffffffb8;
+    --color-bgMenuNormal: rgba(80, 129, 251, 0.16);
+    --color-menuNormal: rgba(255, 255, 255, 0.56);
+    --color-bgMenuHover: rgba(80, 128, 251, 0.64);
+    --color-menuHover: rgba(255, 255, 255, 0.72);
     --color-bgBtnHighlightNormal: rgba(80, 129, 251, 0.08);
     --color-bgBtnHighlightHover: rgba(80, 129, 251, 0.16);
     --color-bgBtnHighlightFocus: rgba(80, 129, 251, 0.24);
@@ -72,9 +77,9 @@ body {
     --color-bdBtnSubmitActive: rgba(80, 129, 251, 0.72);
 
     /* Cores do input e select */
-    --color-bgInput: #ffffff29;
-    --color-input: #ffffffa3;
-    --color-bgInputHover: #ffffff3d;
+    --color-bgInput: rgba(255, 255, 255, 0.161);
+    --color-input: rgba(255, 255, 255, 0.64);
+    --color-bgInputHover: rgba(255, 255, 255, 0.239);
 
     
     /* Cores da seção de edição de código */

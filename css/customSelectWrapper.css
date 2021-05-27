@@ -1,0 +1,101 @@
+.customSelectWrapper {
+    position: relative;
+    user-select: none;
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 0;
+}
+
+.customSelect {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+}
+
+.customSelectTrigger span {
+    background-color: transparent;
+}
+
+.customSelectTrigger {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.customSelectOptions {
+    position: absolute;
+    display: block;
+    z-index: 2;
+    top: 100%;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.5s;
+}
+
+.customSelect.open .customSelectOptions {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+}
+
+.customSelect.open .customSelectTrigger {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+
+.customSelectOption {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    transition: all 0.5s;
+    border-radius: 0;
+}
+
+.customSelectOption:hover {
+    cursor: pointer;
+    background-color: var(--color-bgInputHover);
+}
+.customSelectOption.-selected {
+    color: var(--color-input);
+    background-color: var(--color-bgMenuNormal);
+}
+
+/* Comportamento da setinha */
+.customSelectArrow {
+    position: relative;
+    height: 7px;
+    width: 7px;
+    background-color: transparent;
+}
+.customSelectArrow::before, .customSelectArrow::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    width: 1px;
+    height: 100%;
+    transition: all 0.5s;
+}
+.customSelectArrow::before {
+    left: -15px;
+    transform: rotate(-45deg);
+    background-color: var(--color-white);
+}
+.customSelectArrow::after {
+    left: -10px;
+    transform: rotate(45deg);
+    background-color: var(--color-white);
+}
+.open .customSelectArrow::before {
+    transform: rotate(45deg);
+}
+.open .customSelectArrow::after {
+    transform: rotate(-45deg);
+}
+

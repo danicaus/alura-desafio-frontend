@@ -23,6 +23,7 @@
         <link rel="stylesheet" href="css/section-codeEditor.css">
         <link rel="stylesheet" href="css/media-responsiveness.css">
         <link rel="stylesheet" href="css/header-icon.css">
+        <link rel="stylesheet" href="css/customSelectWrapper.css">
 
     </head>
     <body>
@@ -73,8 +74,7 @@
                             <div class="code-macBtn -bgYellow"></div>
                             <div class="code-macBtn -bgGreen"></div>
                         </div>
-                        <textarea class="code-textarea">
-const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+                        <textarea class="code-textarea" placeholder="const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
 
 const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
 
@@ -84,7 +84,7 @@ const unfold = (f, seed) => {
     return res ? go(f, res[1], acc.concat([res[0]])) : acc
   }
   return go(f, seed, [])
-                        </textarea>
+                        "></textarea>
                     </div>
                     <button class="code-btnHighlight">Visualizar com o highlight</button>  
                 </div>
@@ -96,16 +96,25 @@ const unfold = (f, seed) => {
                     </div>
                     <div class="code-personalization">
                         <h2 class="text-sidebarTitle">Personalização</h2>
-                        <select name="linguagem" class="main-input code-selectLang">
-                            <option class="main-input code-optLang" value="JavaScript" label="JavaScript" selected>JavaScript</option>
-                            <option class="main-input code-optLang" value="HTML" label="HTML">HTML</option>
-                            <option class="main-input code-optLang" value="CSS" label="CSS">CSS</option>
-                        </select>
+                        <div class="customSelectWrapper">
+                            <div class="customSelect">
+                                <div class="main-input customSelectTrigger">
+                                    <span>JavaScript</span>
+                                    <div class="customSelectArrow"></div>
+                                </div>
+                                <div class="customSelectOptions">
+                                    <span class="main-input customSelectOption -selected" data-value="JavaScript">JavaScript</span>
+                                    <span class="main-input customSelectOption" data-value="HTML">HTML</span>
+                                    <span class="main-input customSelectOption" data-value="CSS">CSS</span>
+                                </div>
+                            </div>
+                        </div>
                         <input type="color" value="#6BD1FF" class="main-input code-selectColor">
                     </div>
                         <button class="code-btnHighlight -btnSubmit" type="submit" form="form-codeEditor" class="main-input">Salvar Projeto</button>
                 </div>
             </form>
         </main>
+        <script src="js/customSelectFunction.js"></script>
     </body>
 </html>
