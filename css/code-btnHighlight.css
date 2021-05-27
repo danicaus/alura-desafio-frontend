@@ -9,6 +9,7 @@
     border: none;
     border-radius: 8px;
     background-color: var(--color-bgBtnHighlightNormal);
+    cursor: pointer;
 }
 
 .code-btnHighlight:hover {

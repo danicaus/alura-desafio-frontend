@@ -39,6 +39,7 @@
     box-sizing: border-box;
     height: 58px;
     width: 100%;
+    cursor: pointer;
 }
 
 input[type="color"]::-webkit-color-swatch, input[type="color"]::-moz-color-swatch {
