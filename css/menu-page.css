@@ -1,0 +1,50 @@
+.menu-page {
+    display: flex;
+    flex-direction: column;
+    margin: 16px 16px 0 0;
+    text-decoration: none;
+    box-sizing: content-box;
+    cursor: pointer
+}
+
+.menu-page > figure {
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Menu navegação não pressionado */
+.menu-page img{
+    opacity: 0.48;
+    background-color: var(--color-bgMenuNormal);
+}
+.menu-page figcaption {
+    color: var(--color-menuNormal);
+}
+
+/* Menu navegação não pressionado hover */
+.menu-page:hover img:not(.menu-page.-menuActive:hover img) {
+    opacity: 0.80;
+    background-color: var(--color-bgMenuHover);
+}
+.menu-page:hover figcaption:not(.menu-page.-menuActive:hover figcaption) {
+    color: var(--color-menuHover);
+}
+
+/* Menu navegação pressionado */
+.menu-page.-menuActive img {
+    opacity: 1;
+    background: var(--color-blue-300);
+}
+
+.menu-page.-menuActive figcaption {
+    color: var(--color-white);
+}
+
+/* Menu navegação pressionado hover */
+.menu-page.-menuActive:hover {
+    cursor: default;
+}
+
+
+
+
