@@ -52,13 +52,13 @@
             <section class="menuNavegacao">
                 <h2 class="text-sidebarTitle">Menu</h2>
                 <nav>
-                    <a href="index.html" class="menu-pagEditorTexto -menuActive" ariaPressed="true">
+                    <a href="" ariaPressed="true">
                         <figure>
                             <img src="assets/img/icone-editor-codigo.png" alt="" class="menu-img">
                             <figcaption class="text-body">Editor de código</figcaption>
                         </figure>
                     </a>
-                    <a href="comunity.html" class="menu-pagEditorTexto -menuActive" ariaPressed="false">
+                    <a href="" ariaPressed="false">
                         <figure>
                             <img src="assets/img/icone-comunidade.png" alt="" class="menu-img">
                             <figcaption class="text-body">Comunidade</figcaption> 
@@ -66,54 +66,7 @@
                     </a>
                 </nav>
             </section>
-            <form class="section-codeEditor" id="form-codeEditor">
-                <div class="code-editorColumn">
-                    <div class="code-container">
-                        <div class="code-macBtnContainer">
-                            <div class="code-macBtn -bgRed"></div>
-                            <div class="code-macBtn -bgYellow"></div>
-                            <div class="code-macBtn -bgGreen"></div>
-                        </div>
-                        <textarea class="code-textarea" spellcheck="false" placeholder="const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
-
-const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
-
-const unfold = (f, seed) => {
-  const go = (f, seed, acc) => {
-    const res = f(seed)
-    return res ? go(f, res[1], acc.concat([res[0]])) : acc
-  }
-  return go(f, seed, [])
-                        "></textarea>
-                    </div>
-                    <button class="code-btnHighlight">Visualizar com o highlight</button>  
-                </div>
-                <div class="code-inputSidebar">
-                    <div class="code-description">
-                        <h2 class="text-sidebarTitle">Seu Projeto</h2>
-                        <input type="text" class="main-input code-name" placeholder="Nome do seu projeto">
-                        <textarea class="main-input code-description" placeholder="Descrição do seu projeto"></textarea>
-                    </div>
-                    <div class="code-personalization">
-                        <h2 class="text-sidebarTitle">Personalização</h2>
-                        <div class="customSelectWrapper">
-                            <div class="customSelect">
-                                <div class="main-input customSelectTrigger">
-                                    <span>JavaScript</span>
-                                    <div class="customSelectArrow"></div>
-                                </div>
-                                <div class="customSelectOptions">
-                                    <span class="main-input customSelectOption -csSelected" data-value="JavaScript">JavaScript</span>
-                                    <span class="main-input customSelectOption" data-value="HTML">HTML</span>
-                                    <span class="main-input customSelectOption" data-value="CSS">CSS</span>
-                                </div>
-                            </div>
-                        </div>
-                        <input type="color" value="#6BD1FF" class="main-input code-selectColor">
-                    </div>
-                        <button class="code-btnHighlight -btnSubmit" type="submit" form="form-codeEditor" class="main-input">Salvar Projeto</button>
-                </div>
-            </form>
+            
         </main>
         <script src="js/customSelectFunction.js"></script>
     </body>
