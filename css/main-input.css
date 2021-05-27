@@ -17,6 +17,7 @@
 .main-input.code-description {
     resize: vertical;
     margin: 16px 0 40px 0;
+    min-height: 80px;
 }
 
 .main-input.code-selectLang, .main-input.code-selectColor {
