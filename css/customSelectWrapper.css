@@ -35,26 +35,23 @@
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transition: all 0.5s;
 }
 
-.customSelect.open .customSelectOptions {
+.customSelect.-csOpen .customSelectOptions {
     opacity: 1;
     visibility: visible;
     pointer-events: all;
 }
 
-.customSelect.open .customSelectTrigger {
+.customSelect.-csOpen .customSelectTrigger {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
 }
-
 
 .customSelectOption {
     position: relative;
     display: block;
     cursor: pointer;
-    transition: all 0.5s;
     border-radius: 0;
 }
 
@@ -62,10 +59,12 @@
     cursor: pointer;
     background-color: var(--color-bgInputHover);
 }
-.customSelectOption.-selected {
+.customSelectOption.-csSelected {
     color: var(--color-input);
     background-color: var(--color-bgMenuNormal);
 }
+
+
 
 /* Comportamento da setinha */
 .customSelectArrow {
@@ -80,7 +79,7 @@
     bottom: 0px;
     width: 1px;
     height: 100%;
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 .customSelectArrow::before {
     left: -15px;
@@ -92,10 +91,10 @@
     transform: rotate(45deg);
     background-color: var(--color-white);
 }
-.open .customSelectArrow::before {
+.-csOpen .customSelectArrow::before {
     transform: rotate(45deg);
 }
-.open .customSelectArrow::after {
+.-csOpen .customSelectArrow::after {
     transform: rotate(-45deg);
 }
 
