@@ -42,6 +42,7 @@
     padding: 12px;
     border-radius: 8px;
     width: fit-content;
+    cursor: pointer;
 }
 
 .profileHover > p {
