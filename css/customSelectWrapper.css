@@ -35,6 +35,7 @@
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    background-color: var(--color-dark-blue);
 }
 
 .customSelect.-csOpen .customSelectOptions {
