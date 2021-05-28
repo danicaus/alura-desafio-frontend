@@ -76,6 +76,14 @@
     height: 40px;
 }
 
+.community-reactionContainer > figure:hover{
+    background-color: var( --color-bgBtnHighlightNormal);
+}
+
+.community-reactionContainer > figure:active{
+    background-color: var( --color-bgBtnHighlightHover);
+}
+
 .community-reactionContainer img {
     background-color: transparent;
 }
