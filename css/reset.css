@@ -75,6 +75,7 @@ body {
     --color-bgBtnHighlightFocus: rgba(80, 129, 251, 0.24);
     --color-bdBtnHighlightActive: rgba(80, 129, 251, 0.24);
     --color-bdBtnSubmitActive: rgba(80, 129, 251, 0.72);
+    --color-bgCardProject: rgba(0,0,0,0.16);
 
     /* Cores do input e select */
     --color-bgInput: rgba(255, 255, 255, 0.161);
@@ -94,6 +95,7 @@ body {
     font-family: 'Inter', sans-serif;
     --title-size: 21px;
     --title-line-height: 32px;
+    --title-weight: 700;
     --body-size: 16px;
     --body-line-height: 24px;
     --sidebar-size: 12px;
@@ -102,8 +104,6 @@ body {
     --code-font-family: 'Roboto Mono', monospace;
     --code-size: 14px;
     --code-line-height: 18px;
-}
 
-* {
     background-color: var(--color-dark-blue);
 }
