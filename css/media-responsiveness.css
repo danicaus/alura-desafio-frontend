@@ -51,10 +51,18 @@
         .customSelectWrapper  {
             width: calc(50% - 16px) !important; 
         }
+
+        .community-card {
+            width: 100% !important;
+        }
 }
 
 @media screen 
     and (max-device-width: 767px) {
+        .section-main {
+            padding: 0 16px;
+        }
+        
         .menuNavegacao, .profileContainer {
             display: none;
         }
@@ -87,5 +95,9 @@
         .code-inputSidebar {
             margin: 40px 0px;
             width: 100%;
+        }
+
+        .community-card {
+            width: 100% !important;
         }
 }

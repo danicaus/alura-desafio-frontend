@@ -13,6 +13,7 @@
     width: calc(50% - 12px);
     box-sizing: border-box;
     background-color: var(--color-bgCardProject);
+    margin-bottom: 24px;
 }
 
 .community-codeContainer {
