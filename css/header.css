@@ -8,12 +8,17 @@
     width: 100%;
 }
 
-.header > a {
+.header > .logo-alura {
     display: flex;
     width: 30%;
+    height: 34px;
     min-width: 300px;
     box-sizing: border-box;
     flex: 1;
+    background-image: url('../assets/img/logo-aluradev.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 .profileContainer {
