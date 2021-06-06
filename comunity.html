@@ -27,6 +27,7 @@
         <link rel="stylesheet" href="css/customSelectWrapper.css">
         <link rel="stylesheet" href="css/community-main.css">
         <link rel="stylesheet" href="css/text-title.css">
+        <link rel="stylesheet" href="css/menu-smallDevices.css">
 
     </head>
     <body>
@@ -47,9 +48,31 @@
             <button class="header-icon" id="header-searchIcon">
                 <img src="assets/img/icone-search.png" alt="">
             </button>
-            <button class="header-icon" id="header-menuIcon">
+            <button class="header-icon" id="header-menuIcon" onclick="toggleMenu()">
                 <img src="assets/img/icone-menuHamburguer.png" alt="">
             </button>
+            <div class="menu-smallDevices" hidden data-menu>
+                <nav>
+                    <a href="index.html" class="menu-page -menuActive">
+                        <figure>
+                            <img src="assets/img/icone-editor-codigo.png" alt="" class="menu-img">
+                            <figcaption class="text-body">Editor de código</figcaption>
+                        </figure>
+                    </a>
+                    <a href="comunity.html" class="menu-page">
+                        <figure>
+                            <img src="assets/img/icone-comunidade.png" alt="" class="menu-img">
+                            <figcaption class="text-body">Comunidade</figcaption> 
+                        </figure>
+                    </a>
+                </nav>
+                <div class="profileContainer">
+                    <div class="profileHover">
+                        <span class="profilePhoto"></span>
+                        <p class="text-body" id="header-profileName">Dani Caus</p>
+                    </div>
+                </div>
+            </div>
         </header>  
         <main class="section-main">
             <section class="menuNavegacao">
@@ -190,6 +213,7 @@ const unfold = (f, seed) => {
             </section>
         </main>
         <script src="js/customSelectFunction.js"></script>
+        <script src="js/smallDevicesButtons.js"></script>
         <!-- <script src="js/changePages.js"></script> -->
     </body>
 </html>

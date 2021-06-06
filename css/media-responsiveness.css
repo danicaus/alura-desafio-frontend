@@ -6,9 +6,8 @@
     }
 
 @media screen 
-    and (min-device-width: 767px) 
     and (max-device-width: 1200px) {
-        .menuNavegacao, .profileContainer {
+        .menuNavegacao, .header > .profileContainer {
             display: none;
         }
 
@@ -63,7 +62,7 @@
             padding: 0 16px;
         }
         
-        .menuNavegacao, .profileContainer {
+        .menuNavegacao, .header > .profileContainer {
             display: none;
         }
 

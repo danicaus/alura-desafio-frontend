@@ -1,0 +1,30 @@
+.menu-smallDevices {
+    height: calc(100vh - 130px);
+    background-color: #2D415B;
+    border-radius: 8px;
+    position: absolute;
+    z-index: 5;
+    right: 0;
+    top: 114px;
+    padding: 24px;
+    margin-right: 16px;
+}
+
+.menu-smallDevices.--menuHidden {
+    visibility: hidden;
+}
+
+.menu-smallDevices nav {
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    padding-bottom: 24px;
+}
+
+.menu-smallDevices nav .menu-page:first-child {
+    margin-top: 0;
+}
+
+.menu-smallDevices > .profileContainer {
+    justify-content: flex-start;
+    margin-left: 0;
+    margin-top: 24px;
+}
