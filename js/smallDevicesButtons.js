@@ -1,29 +1,28 @@
+const buttonSearch = document.querySelector("#header-searchIcon");
+const buttonMenu = document.querySelector("#header-menuIcon");
 
-
-function toggleMenu() {
+buttonMenu.addEventListener('click', () => {
     const menu = document.querySelector('[data-menu]');
     const buttonClass = document.querySelector('.menuIcon__hamburger');
     buttonClass.classList.toggle('menuOpen');
     menu.toggleAttribute('hidden');
-}
+});
 
-function toggleSearch() {
-    const header = document.querySelector('.header')
+buttonSearch.addEventListener('click', () => {
+    const header = document.querySelector('.header');
     const searchElement = document.querySelector('[data-search]');
     const buttonClass = document.querySelector('.menuIcon__search');
     const logoClass = document.querySelector('.logo-alura');
     
-    const logoElement = document.createElement('a');
-    logoElement.classList.add('logo-alura');
-    
-    
     buttonClass.classList.toggle('searchOpen');
+    
     if(buttonClass.classList.contains('searchOpen')) {
         logoClass.remove();
         searchElement.setAttribute("style", "visibility:visible;");
     } else {
+        const logoElement = document.createElement('a');
+        logoElement.classList.add('logo-alura');
         header.insertBefore(logoElement, searchElement);
         searchElement.removeAttribute("style");
-    }
-    ;
-}
+    };
+});

@@ -32,34 +32,29 @@
     </head>
     <body>
         <header class="header">
-            <a class="logo-alura" href="">
-                <img src="assets/img/logo-aluradev.png" alt="Logo AluraDev">
-            </a>
-            <input type="text" class="main-input header-searchBar" placeholder="Busque por algo">
+            <a class="logo-alura" href=""></a>
+            <input type="text" class="main-input header-searchBar" placeholder="Busque por algo" data-search>
             <div class="profileContainer">
                 <div class="profileHover">
                     <span class="profilePhoto"></span>
                     <p class="text-body" id="header-profileName">Dani Caus</p>
                 </div>
             </div>
-            <button class="header-icon" id="header-exitIcon">
-                <img src="assets/img/icone-exit.png" alt="">
-            </button>
             <button class="header-icon" id="header-searchIcon">
-                <img src="assets/img/icone-search.png" alt="">
+                <spam class="menuIcon__search"></spam>
             </button>
-            <button class="header-icon" id="header-menuIcon" onclick="toggleMenu()">
-                <img src="assets/img/icone-menuHamburguer.png" alt="">
+            <button class="header-icon" id="header-menuIcon">
+                <spam class="menuIcon__hamburger"></spam>
             </button>
             <div class="menu-smallDevices" hidden data-menu>
                 <nav>
-                    <a href="index.html" class="menu-page -menuActive">
+                    <a href="index.html" class="menu-page">
                         <figure>
                             <img src="assets/img/icone-editor-codigo.png" alt="" class="menu-img">
                             <figcaption class="text-body">Editor de código</figcaption>
                         </figure>
                     </a>
-                    <a href="comunity.html" class="menu-page">
+                    <a href="comunity.html" class="menu-page -menuActive">
                         <figure>
                             <img src="assets/img/icone-comunidade.png" alt="" class="menu-img">
                             <figcaption class="text-body">Comunidade</figcaption> 
@@ -73,7 +68,7 @@
                     </div>
                 </div>
             </div>
-        </header>  
+        </header> 
         <main class="section-main">
             <section class="menuNavegacao">
                 <h2 class="text-sidebarTitle">Menu</h2>
@@ -214,6 +209,5 @@ const unfold = (f, seed) => {
         </main>
         <script src="js/customSelectFunction.js"></script>
         <script src="js/smallDevicesButtons.js"></script>
-        <!-- <script src="js/changePages.js"></script> -->
     </body>
 </html>
