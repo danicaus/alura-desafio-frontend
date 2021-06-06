@@ -18,11 +18,11 @@ buttonSearch.addEventListener('click', () => {
     
     if(buttonClass.classList.contains('searchOpen')) {
         logoClass.remove();
-        searchElement.setAttribute("style", "visibility:visible;");
+        searchElement.style.visibility = 'visible';
     } else {
         const logoElement = document.createElement('a');
         logoElement.classList.add('logo-alura');
         header.insertBefore(logoElement, searchElement);
-        searchElement.removeAttribute("style");
+        searchElement.style.visibility = 'hidden';
     };
 });
