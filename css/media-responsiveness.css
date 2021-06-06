@@ -11,7 +11,7 @@
             display: none;
         }
 
-        .header > a {
+        .header > .logo-alura {
             width: 145px;
             min-width: 145px;
             margin-right: 40px;
@@ -58,22 +58,27 @@
 
 @media screen 
     and (max-device-width: 767px) {
-        .section-main {
-            padding: 0 16px;
+        .section-main, .header {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        .header {
+            padding-top: 16px;
         }
         
         .menuNavegacao, .header > .profileContainer {
             display: none;
         }
 
-        .header > a {
+        .header > .logo-alura {
             width: 145px;
             min-width: 145px;
             margin-right: 40px;
         }
 
         .header > .main-input.header-searchBar {
-            display: none;
+            visibility: hidden;
         }
 
         .header > .header-icon {
