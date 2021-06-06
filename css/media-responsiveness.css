@@ -45,10 +45,9 @@
             width: 100%;
         }
     
-        .code-personalization > .main-input.code-selectLang,
-        .code-personalization > .main-input.code-selectColor,
-        .customSelectWrapper  {
-            width: calc(50% - 16px) !important; 
+        .code-personalization > .customSelectWrapper,
+        .code-personalization > .main-input.code-selectColor {
+            width: calc(50% - 16px); 
         }
 
         .community-card {
@@ -91,13 +90,18 @@
             margin-left: 8px;
         }
 
-
         .section-codeEditor {
             display: block;
         }
         
         .code-inputSidebar {
             margin: 40px 0px;
+            width: 100%;
+        }
+        
+        .code-personalization > .customSelectWrapper,
+        .code-personalization > .main-input.code-selectColor {
+            display: block;
             width: 100%;
         }
 
