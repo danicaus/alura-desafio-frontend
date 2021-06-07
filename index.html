@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="css/reset.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="css/highlight-themes/dracula.css">
         <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/header-searchBar.css">
         <link rel="stylesheet" href="css/main-input.css">
@@ -93,17 +94,9 @@
                             <div class="code-macBtn -bgYellow"></div>
                             <div class="code-macBtn -bgGreen"></div>
                         </div>
-                        <textarea class="code-textarea" spellcheck="false" placeholder="const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
-
-const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
-
-const unfold = (f, seed) => {
-  const go = (f, seed, acc) => {
-    const res = f(seed)
-    return res ? go(f, res[1], acc.concat([res[0]])) : acc
-  }
-  return go(f, seed, [])
-                        "></textarea>
+                        <div class="code-wrapper" data-code-text>
+                            <code class="code-textarea hljs" spellcheck="false" contenteditable="true" aria-label="editor"></code>
+                        </div>
                     </div>
                     <button class="code-btnHighlight">Visualizar com o highlight</button>  
                 </div>
@@ -122,9 +115,9 @@ const unfold = (f, seed) => {
                                     <div class="customSelectArrow"></div>
                                 </div>
                                 <div class="customSelectOptions">
-                                    <span class="main-input customSelectOption -csSelected" data-value="JavaScript">JavaScript</span>
-                                    <span class="main-input customSelectOption" data-value="HTML">HTML</span>
-                                    <span class="main-input customSelectOption" data-value="CSS">CSS</span>
+                                    <span class="main-input customSelectOption -csSelected" data-value="javascript">JavaScript</span>
+                                    <span class="main-input customSelectOption" data-value="html">HTML</span>
+                                    <span class="main-input customSelectOption" data-value="css">CSS</span>
                                 </div>
                             </div>
                         </div>
@@ -137,5 +130,7 @@ const unfold = (f, seed) => {
         <script src="js/customSelectFunction.js"></script>
         <script src="js/smallDevicesButtons.js"></script>
         <script src="js/colorPicker.js"></script>
+        <script src="//unpkg.com/@highlightjs/cdn-assets@11.0.1/highlight.min.js"></script>
+        <script src="js/highlightButton.js"></script>
     </body>
 </html>

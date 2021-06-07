@@ -1,7 +1,9 @@
 .code-textarea {
-    font-family: var(--code-font-family);
+    display: block;
+    line-height: 18px;
     color: var(--color-white);
-    padding: 52px 18px 18px 18px;
+    font-family: var(--code-font-family);
+    padding: 52px 18px 18px 18px !important;
     box-sizing: border-box;
     background-color: var(--color-dark-gray);
     box-shadow: 0px 16px 24px var(--color-editor-shadow);
@@ -12,5 +14,16 @@
     border: none;
     margin: 0;
     resize: vertical;
+    white-space: pre-line;
 }
 
+/*const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+
+const unfold = (f, seed) => {
+  const go = (f, seed, acc) => {
+    const res = f(seed)
+    return res ? go(f, res[1], acc.concat([res[0]])) : acc
+  }
+  return go(f, seed, [])*/
