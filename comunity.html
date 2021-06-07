@@ -1,140 +1,137 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <title>Desafio FrontEnd - Alura Dev</title>
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet"> 
-        <link rel="stylesheet" href="css/header.css">
-        <link rel="stylesheet" href="css/header-searchBar.css">
-        <link rel="stylesheet" href="css/main-input.css">
-        <link rel="stylesheet" href="css/section-main.css">
-        <link rel="stylesheet" href="css/text-body.css">
-        <link rel="stylesheet" href="css/text-sidebarTitle.css">
-        <link rel="stylesheet" href="css/menuNavegacao.css">
-        <link rel="stylesheet" href="css/menu-page.css">
-        <link rel="stylesheet" href="css/menu-img.css">
-        <link rel="stylesheet" href="css/code-editorColumn.css">
-        <link rel="stylesheet" href="css/code-textarea.css">
-        <link rel="stylesheet" href="css/code-btnHighlight.css">
-        <link rel="stylesheet" href="css/code-inputSidebar.css">
-        <link rel="stylesheet" href="css/section-codeEditor.css">
-        <link rel="stylesheet" href="css/media-responsiveness.css">
-        <link rel="stylesheet" href="css/header-icon.css">
-        <link rel="stylesheet" href="css/customSelectWrapper.css">
-        <link rel="stylesheet" href="css/community-main.css">
-        <link rel="stylesheet" href="css/text-title.css">
-        <link rel="stylesheet" href="css/menu-smallDevices.css">
 
-    </head>
-    <body>
-        <header class="header">
-            <a class="logo-alura" href=""></a>
-            <input type="text" class="main-input header-searchBar" placeholder="Busque por algo" data-search>
-            <div class="profileContainer">
-                <div class="profileHover">
-                    <span class="profilePhoto"></span>
-                    <p class="text-body" id="header-profileName">Dani Caus</p>
-                </div>
-            </div>
-            <button class="header-icon" id="header-searchIcon">
-                <spam class="menuIcon__search"></spam>
-            </button>
-            <button class="header-icon" id="header-menuIcon">
-                <spam class="menuIcon__hamburger"></spam>
-            </button>
-            <div class="menu-smallDevices" hidden data-menu>
-                <nav>
-                    <a href="index.html" class="menu-page">
-                        <figure>
-                            <img src="assets/img/icone-editor-codigo.png" alt="" class="menu-img">
-                            <figcaption class="text-body">Editor de código</figcaption>
-                        </figure>
-                    </a>
-                    <a href="comunity.html" class="menu-page -menuActive">
-                        <figure>
-                            <img src="assets/img/icone-comunidade.png" alt="" class="menu-img">
-                            <figcaption class="text-body">Comunidade</figcaption> 
-                        </figure>
-                    </a>
-                </nav>
-                <div class="profileContainer">
-                    <div class="profileHover">
-                        <span class="profilePhoto"></span>
-                        <p class="text-body" id="header-profileName">Dani Caus</p>
-                    </div>
-                </div>
-            </div>
-        </header> 
-        <main class="section-main">
-            <section class="menuNavegacao">
-                <h2 class="text-sidebarTitle">Menu</h2>
-                <nav>
-                    <a href="index.html" class="menu-page">
-                        <figure>
-                            <img src="assets/img/icone-editor-codigo.png" alt="" class="menu-img">
-                            <figcaption class="text-body">Editor de código</figcaption>
-                        </figure>
-                    </a>
-                    <a href="comunity.html" class="menu-page -menuActive">
-                        <figure>
-                            <img src="assets/img/icone-comunidade.png" alt="" class="menu-img">
-                            <figcaption class="text-body">Comunidade</figcaption> 
-                        </figure>
-                    </a>
-                </nav>
-            </section>
-            <section class="community-main">
-                <a class="community-card">
-                    <div class="community-codeContainer">
-                        <div class="code-macBtnContainer -communityMacBtn">
-                            <div class="code-macBtn -bgRed"></div>
-                            <div class="code-macBtn -bgYellow"></div>
-                            <div class="code-macBtn -bgGreen"></div>
-                        </div>
-                        <textarea class="community-textarea" spellcheck="false" disabled>const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Desafio FrontEnd - Alura Dev</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Mono&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/highlight-themes/dracula.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/header-searchBar.css">
+	<link rel="stylesheet" href="css/main-input.css">
+	<link rel="stylesheet" href="css/section-main.css">
+	<link rel="stylesheet" href="css/text-body.css">
+	<link rel="stylesheet" href="css/text-sidebarTitle.css">
+	<link rel="stylesheet" href="css/menuNavegacao.css">
+	<link rel="stylesheet" href="css/menu-page.css">
+	<link rel="stylesheet" href="css/menu-img.css">
+	<link rel="stylesheet" href="css/code-editorColumn.css">
+	<link rel="stylesheet" href="css/code-textarea.css">
+	<link rel="stylesheet" href="css/code-btnHighlight.css">
+	<link rel="stylesheet" href="css/code-inputSidebar.css">
+	<link rel="stylesheet" href="css/section-codeEditor.css">
+	<link rel="stylesheet" href="css/media-responsiveness.css">
+	<link rel="stylesheet" href="css/header-icon.css">
+	<link rel="stylesheet" href="css/customSelectWrapper.css">
+	<link rel="stylesheet" href="css/community-main.css">
+	<link rel="stylesheet" href="css/text-title.css">
+	<link rel="stylesheet" href="css/menu-smallDevices.css">
 
-const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+</head>
 
-const unfold = (f, seed) => {
-  const go = (f, seed, acc) => {
-    const res = f(seed)
-    return res ? go(f, res[1], acc.concat([res[0]])) : acc
-  }
-  return go(f, seed, [])</textarea>
-                    </div>
-                    <div class="community-cardDescription">
-                        <h3 class="text-title">Título do projeto</h3>
-                        <p class="text-body">Essa é a descrição do meu projeto</p>
-                        <div class="community-actionsWrapper">
-                            <div class="community-reactionContainer">
-                                <figure>
-                                    <img src="assets/img/icone-comment.png" alt="">
-                                    <figcaption>9</figcaption>
-                                </figure>
-                                <figure>
-                                    <img src="assets/img/icone-like.png" alt="">
-                                    <figcaption>9</figcaption>
-                                </figure>
-                            </div>
-                            <div class="profileHover">
-                                <span class="profilePhoto"></span>
-                                <p class="text-body" id="header-profileName">Dani Caus</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a class="community-card">
-                    <div class="community-codeContainer">
-                        <div class="code-macBtnContainer -communityMacBtn">
-                            <div class="code-macBtn -bgRed"></div>
-                            <div class="code-macBtn -bgYellow"></div>
-                            <div class="code-macBtn -bgGreen"></div>
-                        </div>
-                        <textarea class="community-textarea" spellcheck="false" disabled>const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+<body>
+	<header class="header">
+		<a class="logo-alura" href=""></a>
+		<input type="text" class="main-input header-searchBar" placeholder="Busque por algo" data-search>
+		<div class="profileContainer">
+			<div class="profileHover">
+				<span class="profilePhoto"></span>
+				<p class="text-body" id="header-profileName">Dani Caus</p>
+			</div>
+		</div>
+		<button class="header-icon" id="header-searchIcon">
+			<spam class="menuIcon__search"></spam>
+		</button>
+		<button class="header-icon" id="header-menuIcon">
+			<spam class="menuIcon__hamburger"></spam>
+		</button>
+		<div class="menu-smallDevices" hidden data-menu>
+			<nav>
+				<a href="index.html" class="menu-page">
+					<figure>
+						<img src="assets/img/icone-editor-codigo.png" alt="" class="menu-img">
+						<figcaption class="text-body">Editor de código</figcaption>
+					</figure>
+				</a>
+				<a href="comunity.html" class="menu-page -menuActive">
+					<figure>
+						<img src="assets/img/icone-comunidade.png" alt="" class="menu-img">
+						<figcaption class="text-body">Comunidade</figcaption>
+					</figure>
+				</a>
+			</nav>
+			<div class="profileContainer">
+				<div class="profileHover">
+					<span class="profilePhoto"></span>
+					<p class="text-body" id="header-profileName">Dani Caus</p>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main class="section-main">
+		<section class="menuNavegacao">
+			<h2 class="text-sidebarTitle">Menu</h2>
+			<nav>
+				<a href="index.html" class="menu-page">
+					<figure>
+						<img src="assets/img/icone-editor-codigo.png" alt="" class="menu-img">
+						<figcaption class="text-body">Editor de código</figcaption>
+					</figure>
+				</a>
+				<a href="comunity.html" class="menu-page -menuActive">
+					<figure>
+						<img src="assets/img/icone-comunidade.png" alt="" class="menu-img">
+						<figcaption class="text-body">Comunidade</figcaption>
+					</figure>
+				</a>
+			</nav>
+		</section>
+		<section class="community-main">
+			<a class="community-card">
+				<div class="community-codeContainer">
+					<div class="code-macBtnContainer -communityMacBtn">
+						<div class="code-macBtn -bgRed"></div>
+						<div class="code-macBtn -bgYellow"></div>
+						<div class="code-macBtn -bgGreen"></div>
+					</div>
+					<div class="code-wrapper" data-code-text>	
+						<code class="code-textarea --community hljs" spellcheck="false">Teste
+						</code>
+					</div>
+				</div>
+				<div class="community-cardDescription">
+					<h3 class="text-title">Título do projeto</h3>
+					<p class="text-body">Essa é a descrição do meu projeto</p>
+					<div class="community-actionsWrapper">
+						<div class="community-reactionContainer">
+							<figure>
+								<img src="assets/img/icone-comment.png" alt="">
+								<figcaption>9</figcaption>
+							</figure>
+							<figure>
+								<img src="assets/img/icone-like.png" alt="">
+								<figcaption>9</figcaption>
+							</figure>
+						</div>
+						<div class="profileHover">
+							<span class="profilePhoto"></span>
+							<p class="text-body" id="header-profileName">Dani Caus</p>
+						</div>
+					</div>
+				</div>
+			</a>
+			<a class="community-card">
+				<div class="community-codeContainer">
+					<div class="code-macBtnContainer -communityMacBtn">
+						<div class="code-macBtn -bgRed"></div>
+						<div class="code-macBtn -bgYellow"></div>
+						<div class="code-macBtn -bgGreen"></div>
+					</div>
+					<code class="code-textarea --community hljs" spellcheck="false">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
 
 const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
 
@@ -143,38 +140,37 @@ const unfold = (f, seed) => {
     const res = f(seed)
     return res ? go(f, res[1], acc.concat([res[0]])) : acc
   }
-  return go(f, seed, [])</textarea>
-                    </div>
-                    <div class="community-cardDescription">
-                        <h3 class="text-title">Título do projeto</h3>
-                        <p class="text-body">Essa é a descrição do meu projeto</p>
-                        <div class="community-actionsWrapper">
-                            <div class="community-reactionContainer">
-                                <figure>
-                                    <img src="assets/img/icone-comment.png" alt="">
-                                    <figcaption>9</figcaption>
-                                </figure>
-                                <figure>
-                                    <img src="assets/img/icone-like.png" alt="">
-                                    <figcaption>9</figcaption>
-                                </figure>
-                            </div>
-                            <div class="profileHover">
-                                <span class="profilePhoto"></span>
-                                <p class="text-body" id="header-profileName">Dani Caus</p>
-                            </div>  
-                        </div>
-                    </div>
-                </a>
-                <a class="community-card">
-                    <div class="community-codeContainer">
-                        <div class="code-macBtnContainer -communityMacBtn">
-                            <div class="code-macBtn -bgRed"></div>
-                            <div class="code-macBtn -bgYellow"></div>
-                            <div class="code-macBtn -bgGreen"></div>
-                        </div>
-                        <textarea class="community-textarea" spellcheck="false" disabled>const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
-
+  return go(f, seed, [])</code>
+				</div>
+				<div class="community-cardDescription">
+					<h3 class="text-title">Título do projeto</h3>
+					<p class="text-body">Essa é a descrição do meu projeto</p>
+					<div class="community-actionsWrapper">
+						<div class="community-reactionContainer">
+							<figure>
+								<img src="assets/img/icone-comment.png" alt="">
+								<figcaption>9</figcaption>
+							</figure>
+							<figure>
+								<img src="assets/img/icone-like.png" alt="">
+								<figcaption>9</figcaption>
+							</figure>
+						</div>
+						<div class="profileHover">
+							<span class="profilePhoto"></span>
+							<p class="text-body" id="header-profileName">Dani Caus</p>
+						</div>
+					</div>
+				</div>
+			</a>
+			<a class="community-card">
+				<div class="community-codeContainer">
+					<div class="code-macBtnContainer -communityMacBtn">
+						<div class="code-macBtn -bgRed"></div>
+						<div class="code-macBtn -bgYellow"></div>
+						<div class="code-macBtn -bgGreen"></div>
+					</div>
+					<code class="code-textarea --community hljs" spellcheck="false">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
 const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
 
 const unfold = (f, seed) => {
@@ -182,32 +178,33 @@ const unfold = (f, seed) => {
     const res = f(seed)
     return res ? go(f, res[1], acc.concat([res[0]])) : acc
   }
-  return go(f, seed, [])</textarea>
-                    </div>
-                    <div class="community-cardDescription">
-                        <h3 class="text-title">Título do projeto</h3>
-                        <p class="text-body">Essa é a descrição do meu projeto</p>
-                        <div class="community-actionsWrapper">
-                            <div class="community-reactionContainer">
-                                <figure>
-                                    <img src="assets/img/icone-comment.png" alt="">
-                                    <figcaption>9</figcaption>
-                                </figure>
-                                <figure>
-                                    <img src="assets/img/icone-like.png" alt="">
-                                    <figcaption>9</figcaption>
-                                </figure>
-                            </div>
-                            <div class="profileHover">
-                                    <span class="profilePhoto"></span>
-                                    <p class="text-body" id="header-profileName">Dani Caus</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </section>
-        </main>
-        <script src="js/customSelectFunction.js"></script>
-        <script src="js/smallDevicesButtons.js"></script>
-    </body>
+  return go(f, seed, [])</code>
+				</div>
+				<div class="community-cardDescription">
+					<h3 class="text-title">Título do projeto</h3>
+					<p class="text-body">Essa é a descrição do meu projeto</p>
+					<div class="community-actionsWrapper">
+						<div class="community-reactionContainer">
+							<figure>
+								<img src="assets/img/icone-comment.png" alt="">
+								<figcaption>9</figcaption>
+							</figure>
+							<figure>
+								<img src="assets/img/icone-like.png" alt="">
+								<figcaption>9</figcaption>
+							</figure>
+						</div>
+						<div class="profileHover">
+							<span class="profilePhoto"></span>
+							<p class="text-body" id="header-profileName">Dani Caus</p>
+						</div>
+					</div>
+				</div>
+			</a>
+		</section>
+	</main>
+	<script src="js/customSelectFunction.js"></script>
+	<script src="js/smallDevicesButtons.js"></script>
+</body>
+
 </html>
