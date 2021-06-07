@@ -40,7 +40,8 @@
 }
 
 .code-textarea.--community {
-    height: 240px;
+    min-height: 240px;
+    line-break: anywhere;
 }
 
 .community-actionsWrapper {
