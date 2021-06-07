@@ -23,11 +23,11 @@ function loadProjects() {
                 <div class="community-reactionContainer">
                     <figure>
                         <img src="assets/img/icone-comment.png" alt="">
-                        <figcaption>9</figcaption>
+                        <figcaption>0</figcaption>
                     </figure>
                     <figure>
                         <img src="assets/img/icone-like.png" alt="">
-                        <figcaption>9</figcaption>
+                        <figcaption>0</figcaption>
                     </figure>
                 </div>
                 <div class="profileHover">
