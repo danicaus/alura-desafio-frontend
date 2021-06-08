@@ -10,7 +10,6 @@ for (const option of document.querySelectorAll(".customSelectOption")) {
         if(!highlightLang.classList.contains(language)){
             const languages = ["javascript", "html", "css"];
             highlightLang.classList.remove(...languages);
-            console.log(highlightLang.classList);
             highlightLang.classList.add(language);
         }
     })

@@ -1,6 +1,5 @@
 function loadProjects() {
     const bankProjects = JSON.parse(localStorage.getItem("projects")) || []
-    console.log(bankProjects)
     
     bankProjects.forEach((projeto) => {
         const section = document.querySelector(".community-main")
