@@ -18,7 +18,7 @@
     background-image: url('../assets/img/logo-aluradev.svg');
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center;
+    background-position: initial;
 }
 
 .profileContainer {
