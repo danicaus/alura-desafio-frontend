@@ -32,7 +32,7 @@ const saveInputs = (event) => {
     const bankProjects = [...projects, project]
     localStorage.setItem("projects", JSON.stringify(bankProjects))
 
-    window.location.href = '/comunity.html'
+    window.location.href = 'comunity.html'
 
 }
 
