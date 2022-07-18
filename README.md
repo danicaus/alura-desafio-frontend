@@ -1,5 +1,7 @@
 <h1 align="center">
+
   ![Logo AluraDev](./assets/img/logo-aluradev.svg)
+
 </h1>
 
 ![Gif da aplicação em uso](./assets/Danicaus-fimSemana2.gif)
